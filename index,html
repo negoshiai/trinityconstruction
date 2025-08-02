@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinity Contracting, Inc. | Design-Build Done Right</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white font-inter antialiased">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#hero" class="transition-colors duration-300 text-white">
+                    <span class="text-2xl font-bold font-poppins">Trinity</span>
+                    <span class="text-2xl font-light font-poppins text-[#F1C40F]">.</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#whytrinity" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Why Trinity?</a>
+                    <a href="#services" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Services</a>
+                    <a href="#projects" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Projects</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="focus:outline-none text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-sm">
+            <div class="px-8 pt-4 pb-8 space-y-4">
+                <a href="#whytrinity" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#2C3E50]">Why Trinity?</a>
+                <a href="#services" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#2C3E50]">Services</a>
+                <a href="#projects" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#2C3E50]">Projects</a>
+                <a href="#contact" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#2C3E50]">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-screen w-full flex items-center justify-center text-white overflow-hidden bg-[#2C3E50]">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1559223607-b437a14a3448?q=80&w=2070&auto=format&fit=crop" alt="Steel structure of a building under construction" class="w-full h-full object-cover opacity-20"/>
+            </div>
+            <div class="relative z-10 text-center px-4">
+                <div class="masked-text text-4xl md:text-6xl lg:text-7xl font-extrabold font-poppins drop-shadow-lg mb-4">
+                    <h1>Design-Build Done Right</h1>
+                </div>
+                <div class="masked-text text-lg md:text-xl max-w-3xl mx-auto text-gray-300 drop-shadow-md">
+                    <p>Serving WV & PA with fully self-performed construction for commercial and institutional clients.</p>
+                </div>
+                <div class="animated-item mt-10">
+                    <a href="#contact" class="inline-block bg-[#F1C40F] text-[#2C3E50] font-bold py-4 px-10 rounded-md transition-transform hover:scale-105 shadow-lg">
+                        Get a Bid
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Trinity? Section -->
+        <section id="whytrinity" class="animated-section py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div class="masked-text text-3xl md:text-4xl font-bold text-[#2C3E50] font-poppins">
+                        <h2>Why Trinity?</h2>
+                    </div>
+                    <p class="animated-item mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Our hands-on approach is the foundation of our success.</p>
+                </div>
+                <div id="why-trinity-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Content injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="animated-section py-20 md:py-28 bg-[#F8F9FA]">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div class="masked-text text-3xl md:text-4xl font-bold text-[#2C3E50] font-poppins">
+                       <h2>Core Services</h2>
+                    </div>
+                    <p class="animated-item mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Our integrated model covers your project from structure to finish.</p>
+                </div>
+                <div id="services-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <!-- Content injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="animated-section py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="masked-text text-3xl md:text-4xl font-bold text-[#2C3E50] font-poppins mb-16 text-center">
+                    <h2>Featured Work</h2>
+                </div>
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Content injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="animated-section py-20 md:py-28 bg-[#F8F9FA]">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="masked-text text-3xl md:text-4xl font-bold text-[#2C3E50] font-poppins mb-16 text-center">
+                    <h2>Get a Bid</h2>
+                </div>
+                <div class="grid md:grid-cols-5 gap-12">
+                    <div class="contact-card md:col-span-2 bg-white p-8 rounded-lg shadow-lg border">
+                        <h3 class="text-2xl font-bold text-[#2C3E50] mb-6 font-poppins">Contact Information</h3>
+                        <div class="space-y-4 text-gray-700">
+                            <p><strong>Phone:</strong><br/>724-872-2085 (ext. 100)</p>
+                            <p><strong>Email:</strong><br/>info@trinitycontracting.com</p>
+                            <p><strong>Address:</strong><br/>602 East Main Street<br/>West Newton, PA 15089</p>
+                        </div>
+                    </div>
+                    <div class="contact-card md:col-span-3 bg-white p-8 rounded-lg shadow-lg border">
+                        <h3 class="text-2xl font-bold text-[#2C3E50] mb-6 font-poppins">Send Us a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-[#F1C40F] outline-none"/>
+                            </div>
+                            <div>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-[#F1C40F] outline-none"/>
+                            </div>
+                            <div>
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea id="message" rows="5" placeholder="Project Details..." class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-[#F1C40F] outline-none"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-[#F1C40F] text-[#2C3E50] font-bold py-3 px-6 rounded-md transition-transform hover:scale-105">Submit Inquiry</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C3E50] text-gray-400">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <p>&copy; 2025 Trinity Contracting, Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
