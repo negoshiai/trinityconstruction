@@ -1,0 +1,56 @@
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Blueprint Grid Background */
+.animated-section {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZHRoPSIzMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSJub25lIi8+PGcgc3Ryb2tlPSIjMkMzRTUwIiBzdHJva2Utd2lkdGg9IjEiPjxwYXRoIGQ9Ik0wIDE1VjMwTTMwIDE1VjMwTTMgMEgzMFYxNU0wIDNIMTVNMyA2SDMwTTMgOUgzME0zIDEySDMwIi8+PC9nPjwvc3ZnPg==');
+    background-repeat: repeat;
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+/* Masked Text Animation */
+.masked-text {
+    overflow: hidden;
+}
+
+.masked-text > * {
+    transform: translateY(100%);
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.masked-text.is-visible > * {
+    transform: translateY(0%);
+}
+
+/* General Item Animation */
+.animated-item, .animated-card, .contact-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animated-item.is-visible, .animated-card.is-visible, .contact-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation delays */
+.animated-card:nth-child(2) { transition-delay: 0.1s; }
+.animated-card:nth-child(3) { transition-delay: 0.2s; }
+.animated-card:nth-child(4) { transition-delay: 0.3s; }
+.animated-card:nth-child(5) { transition-delay: 0.4s; }
+.animated-card:nth-child(6) { transition-delay: 0.5s; }
+
+.contact-card:nth-child(2) { transition-delay: 0.2s; }
+
+/* Initial state for hero animation */
+.animated-item { transition-delay: 0.8s; }
